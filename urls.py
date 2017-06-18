@@ -1,4 +1,4 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import url
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 #from django.conf import settings
 #from django.views.generic.simple import direct_to_template
@@ -6,10 +6,10 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = [
     url(r'^json_workbook/', 'pyxform_interface.views.json_workbook'),
     url(r'^$', 'pyxform_interface.views.index'),
     (r'^downloads/(?P<path>.*)$', 'pyxform_interface.views.serve_file'),
-)
+]
 
 urlpatterns += staticfiles_urlpatterns()
