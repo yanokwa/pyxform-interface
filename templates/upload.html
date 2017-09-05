@@ -22,12 +22,13 @@ $(document).ready(function() {
 	</script>
 </head>
 <body>
-	
+
 {% block upload %}
 <form enctype="multipart/form-data" method="post" class="well" id="myForm">
    <table>
        {{form.as_table}}
     </table>
+   {% csrf_token %}
     <input type="submit" value="Submit" id="submitBtn" class="btn" />
 </form>
 {% endblock %}
