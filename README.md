@@ -1,3 +1,5 @@
+## This tool is no longer supported. Please use [ODK XLSForm Online](https://github.com/opendatakit/xlsform-online) instead.
+
 This is a Django web interface for [pyxform](https://github.com/UW-ICTD/pyxform) (the xlsform converter for ODK Collect).
 
 Installation
